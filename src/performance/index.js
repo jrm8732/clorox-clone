@@ -14,7 +14,7 @@ class Performance extends Component{
                         <Shelf width="60%" top="35em" left ="20em"/>
                     </div>
                     <div className="shelf-row">
-                        <Shelf width="40%" top="50em" left="25em"/>
+                        <Shelf width="50%" top="50em" left="40em"/>
                     </div>
                     
                 </section>
