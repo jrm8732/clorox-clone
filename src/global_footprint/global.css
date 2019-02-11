@@ -81,7 +81,6 @@
 }
 .parent{
     position:relative;
-    display:none;
 }
 .list ul{
     font-size:1rem;
@@ -100,4 +99,7 @@
 .list{
     border-left:solid;
     border-color:dodgerblue;
+}
+.global-main{
+    display: none;
 }
