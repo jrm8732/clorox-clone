@@ -1,0 +1,103 @@
+﻿
+#root{
+    font-size: 16px;
+    width: 100vw;
+    height: 100vh;
+  }
+.blue-g {
+    color: #005cb9;
+}
+.yellow-g {
+    color: #f99d1c;
+}
+.green-g {
+    color: #49a942;
+}
+.lblue-g {
+    color: #009ddc;
+}
+.purple-g {
+    color: #524e86;
+}
+.row li,h3{
+    display: flex;
+    flex-direction: row;
+}
+.global-1 {
+    z-index: 1000;
+    position: absolute;
+    top: 15%;
+    left: 27%;
+}
+.global-2 {
+    z-index: 1000;
+    position: absolute;
+    top: 22%;
+    left: 50%;
+}
+.global-3 {
+    z-index: 2000;
+    position: absolute;
+    top: 15%;
+    right: 25%;
+}
+.global-4 {
+    z-index: 2000;
+    position: absolute;
+    bottom: 30%;
+    left: 33%;
+}
+.global-5 {
+    z-index: 2000;
+    position: absolute;
+    left:50%;
+    bottom:45%;
+}
+.global-6{
+    z-index:2000;
+    position:absolute;
+    left:90rem;
+    bottom:7.8rem;
+}
+.global-7 {
+    z-index: 2000;
+    position: absolute;
+    left: 78%;
+    bottom: 3%;
+    display:flex;
+    flex-direction:row;
+}
+.global-menu {
+    position: absolute;
+    left: 2%;
+    bottom: 10%;
+    text-align: left;
+    border-left: solid;
+    border-color: dodgerblue;
+}
+.global-menu li{
+    display:flex;
+    flex-flow:row;
+}
+.parent{
+    position:relative;
+    display:none;
+}
+.list ul{
+    font-size:1rem;
+    text-align:left;
+    padding:0 .6rem 0 .6rem;
+}
+.list li{
+    display:flex;
+    flex-direction:row;
+}
+.list h3 {
+    text-align: left;
+    padding: 0 0 10px 0;
+    margin: 0;
+}
+.list{
+    border-left:solid;
+    border-color:dodgerblue;
+}

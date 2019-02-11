@@ -1,0 +1,88 @@
+﻿ul {
+    list-style: none;
+    font-size: x-large;
+}
+
+p {
+    margin-block-start: 3em;
+    margin-block-end: 0;
+}
+
+h6, h5, h4 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.grid_scorecard {
+    display: flex;
+    flex-flow: row;
+    flex: 1 0 auto;
+    padding: 12em;
+}
+
+.row {
+    margin: 7em;
+    width: 60%;
+    padding: .5em;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.column {
+    height: 40%;
+}
+
+.g0 {
+    margin-top: 6em;
+}
+
+.g2 {
+    margin-top: 3em;
+}
+
+.h-c {
+    font-size: 2em;
+    padding: .2em;
+    position: relative;
+}
+
+.border-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    border-color: red;
+    border-width: 3px;
+    z-index: 1000;
+}
+
+.h-d ul {
+    font-size: 1em;
+}
+
+.h-d li:nth-child(even) {
+    font-size: .5em;
+}
+
+.country ul {
+    font-size: 1em;
+}
+
+.r4 {
+    margin-top: -3em;
+}
+
+.r2 {
+    margin-top: -3em;
+}
+
+.pg-2018-scorecard {
+    display: none;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 auto;
+    position: relative;
+    top: 40%;
+
+}
