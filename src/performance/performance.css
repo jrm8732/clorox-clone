@@ -1,0 +1,17 @@
+.performance-main h1{
+    position:relative;
+    top: 18%;
+    left:25%;
+}
+.performance-main{
+    width:100vw;
+    height:100vh;
+    display: flex;
+}
+.shelf{
+    content: '';
+    height: 14px;
+    background-color: #dfdfdf;
+    border-top: 2px solid #fff;
+    box-shadow: 0 15px 30px 1px #d2d2d2;
+}
