@@ -14,4 +14,46 @@
     background-color: #dfdfdf;
     border-top: 2px solid #fff;
     box-shadow: 0 15px 30px 1px #d2d2d2;
+    
+}
+.shelf-row{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+   
+}
+.sr1{
+    position:absolute;
+    top:316px;
+    left:960px;
+    width: 180px;
+    height: 115px;
+    z-index:99;
+}
+.sr2{
+    position: absolute;
+    top:560px;
+    left:320px;
+    width:940px;
+    height: 115px;
+}
+.sr3{
+    position: absolute;
+    top:800px;
+    right:600px;
+    height: 115px;
+    width:940px;
+}
+.shelf-col{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+.bar{
+    fill:blue;
+    opacity: 1;
+}
+
+.graph-wrapper{
+    width:180px;
 }

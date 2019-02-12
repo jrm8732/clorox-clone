@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import Shelf from './shelf'
+import Graph from './graph'
 import "./performance.css"
 class Performance extends Component{
     render(){
@@ -7,14 +8,21 @@ class Performance extends Component{
             <div className="performance-main parent">
                 <h1>Performance</h1>
                 <section className='performance-components child'>
-                    <div className="shelf-row">
-                        <Shelf width="10%" top='20em' left='60em'/>
+                    <div className="shelf-row sr1">
+                        <Graph/>
+                        <Shelf width="100%" top='115px' left='960px;'/>
                     </div>
-                    <div className="shelf-row">
-                        <Shelf width="60%" top="35em" left ="20em"/>
+                    <div className="shelf-row sr2">
+                        <Graph/>
+                        <Graph/>
+                        <Graph/>
+                        <Shelf width="100%" top="115px" left ="0"/>
                     </div>
-                    <div className="shelf-row">
-                        <Shelf width="50%" top="50em" left="40em"/>
+                    <div className="shelf-row sr3">
+                        <Graph/>
+                        <Graph/>
+                        <Graph/>
+                        <Shelf width="100%" top="115px" left="0"/>
                     </div>
                     
                 </section>
