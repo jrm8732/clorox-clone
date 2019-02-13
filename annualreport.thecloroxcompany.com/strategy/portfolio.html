@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from annualreport.thecloroxcompany.com/strategy/portfolio.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Feb 2019 19:22:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="x-ua-compatible" content="IE=Edge"/>
+<meta charset="UTF-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1118.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:image" content="../_images/global/shareImage.png?v.2018.1" />
+
+<title>Clorox 2018 Integrated Annual Report</title>
+<link rel="stylesheet" href="../_css/maind80a.css?v.2018.4">
+<link rel="stylesheet" href="../_js/jquery.fancybox.min.css">
+<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	    <script src="../../assets.adobedtm.com/cfd7100a02cbfa40b2c485d333da22f89ccabd9c/satelliteLib-e1a96af74edf26406b64b1c5cb0abedb7b5a6c6c.js"></script>
+	</head>
+<body class="ceoLetter">
+<header>
+	<div class="header__hamburger">
+		<span>MENU</span>
+		<div class="header__hamburger__bars">
+			<div></div>
+		</div>
+	</div>
+
+	<a class="logoWrap" href="../index-2.html">
+		<img class="header__logo" src="../_images/global/logo.svg">
+	</a>
+    <div class="container container--header">
+        <div class="row">
+			<div class="header__links">
+				<span class="ir">2018 Integrated Annual Report</span>
+				<ul>
+					<li><a class="header__links__resources" href="#">Resources</a></li>
+					<li><a class="header__links__download" href="#">Download</a></li>
+					<li><a class="header__links__search" href="#"><i class="fas fa-search"></i></a></li>
+					<li class="socialLink facebook" id="facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+					<li class="socialLink twitter" id="twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+					<li class="socialLink linkedIn" id="linkedIn"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+					<li class="socialLink"><a href="mailto:corporate.communications@clorox.com"><i class="fas fa-envelope"></i></a></li>
+				</ul>
+			</div>
+
+			<div class="headerSearch">
+				<div class="headerSearch__relativeWrapper">
+					<form action="https://annualreport.thecloroxcompany.com/search.php">
+						<input class="headerSearch__input" type="text" class="search" name="q" id="tipue_search_input" autocomplete="off" placeholder="Search" required="">
+						<span class="headerSearch__del">X</span>
+					</form>
+				</div>
+			</div>
+
+			<div class="headerResources">
+				<div class="headerResources__relativeWrapper">
+					<ul>
+						<li><a href="../about.html">About This Report</a></li>
+						<li><a href="../materiality.html">Materiality Overview</a></li>
+						<li><a href="../gri.html">GRI Content Index</a></li>
+						<li><a href="../info.html">Stockholder Information</a></li>
+						<li><a target="_blank" href="https://www.thecloroxcompany.com/">The Clorox Company</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="downloads">
+				<div class="headerResources__relativeWrapper">
+					<ul>
+						<li><a href="../Clorox_2018_Integrated_Report9530.pdf?v10-11-2018" target="_blank">Full PDF</a></li>
+						<li><a href="../Clorox_2018_Executive_Summary_English.pdf" target="_blank">Executive Summary English</a></li>
+						<li><a href="../Clorox_2018_Executive_Summary_Spanish.pdf" target="_blank">Executive Summary Spanish</a></li>
+					</ul>
+				</div>
+			</div>
+        </div>
+	</div>
+
+	<nav class="mainNav">
+		<div class="mainNav__box mainNav__box--1">
+			<a class="mainNav__mainLink" href="../ceo-letter/index.html">CEO Letter</a>
+
+			<img src="../_images/global/nav1.png" class="mainNav__product mainNav__product--1">
+		</div>
+
+		<div class="mainNav__box mainNav__box--2">
+			<div class="mainNav__linkWrap">
+				<a class="mainNav__mainLink" href="index.html">2020 Strategy</a>
+
+				<ul class="secondaryNav">
+					<li><a href="people.html">Engage our People</a></li>
+					<li><a href="value.html">Drive Superior Consumer Value</a></li>
+					<li><a href="portfolio.html">Accelerate Portfolio Momentum</a></li>
+					<li><a href="growth.html">Fund Growth</a></li>
+				</ul>
+			</div>
+
+			<img src="../_images/global/nav2.png" class="mainNav__product mainNav__product--2">
+		</div>
+
+		<div class="mainNav__box mainNav__box--3">
+			<a class="mainNav__mainLink" href="../innovation/index.html">Innovation</a>
+
+			<img src="../_images/global/nav3.png" class="mainNav__product mainNav__product--3">
+		</div>
+
+		<div class="mainNav__box mainNav__box--4">
+			<div class="mainNav__linkWrap">
+				<a class="mainNav__mainLink" href="../scorecard/index.html">Scorecard</a>
+
+				<ul class="secondaryNav">
+					<li><a href="../scorecard/footprint.html">Global Footprint</a></li>
+					<li><a href="../scorecard/performance.html">Performance</a></li>
+					<li><a href="../scorecard/product.html">Product</a></li>
+					<li><a href="../scorecard/people.html">People</a></li>
+					<li><a href="../scorecard/community.html">Community</a></li>
+					<li><a href="../scorecard/planet.html">Planet</a></li>
+				</ul>
+			</div>
+
+			<img src="../_images/global/nav4.png" class="mainNav__product mainNav__product--4">
+		</div>
+
+		<div class="mainNav__box mainNav__box--5">
+			<div class="mainNav__linkWrap">
+				<a class="mainNav__mainLink" href="../recognitions/index.html">Recognitions</a>
+
+				<ul class="secondaryNav">
+					<li><a href="../recognitions/index.html">Company Recognitions</a></li>
+					<li><a href="../recognitions/brand.html">Brand Recognitions</a></li>
+				</ul>
+			</div>
+			<img src="../_images/global/nav5.png" class="mainNav__product mainNav__product--5">
+		</div>
+
+		<div class="mainNav__box mainNav__box--6">
+			<a class="mainNav__mainLink" href="../financials/index.html">Financials</a>
+
+			<img src="../_images/global/nav6.png" class="mainNav__product mainNav__product--6">
+		</div>
+
+		<div class="mainNav__box mainNav__box--7">
+			<div class="mainNav__linkWrap">
+				<a class="mainNav__mainLink" href="../governance/index.html">Governance</a>
+
+				<ul class="secondaryNav">
+					<li><a href="../governance/board.html">Board of Directors</a></li>
+					<li><a href="../governance/committee.html">Executive Committee</a></li>
+				</ul>
+			</div>
+
+			<img src="../_images/global/nav7.png" class="mainNav__product mainNav__product--7">
+		</div>
+
+		<div class="mainNav__box mainNav__box--mobile">
+			<ul>
+				<li class="facebook" id="facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+				<li class="twitter" id="twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+				<li class="linkedIn" id="linkedIn"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+				<li><a href="mailto:corporate.communications@clorox.com"><i class="fas fa-envelope"></i></a></li>
+			</ul>
+		</div>
+	</nav>
+</header>
+<div class="interiorWrapper">
+	<div class="container">
+		<div class="row">
+			<div class="sectionBoxWrap">
+				<div class="sectionBox">
+					<div class="sectionName">Strategy</div>
+					<div class="sectionNumber">03</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="hero">
+				<h1 class="pageTitle">Accelerate Portfolio <br>Momentum</h1>
+				<img src="../_images/strategy/portfolio/hero.jpg">
+
+				<div class="hero__whiteBar hero__whiteBar--3"></div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="content content--start3 fade fade--up">
+				<h1 class="heading">Business Highlights</h1>
+				<h2 class="sectionSubHeading">Accelerate portfolio momentum in and around the core.</h2>
+
+				<div class="floatLeft margin-neg-left-40 margin-top-40 margin-bottom-30">
+					<img src="../_images/strategy/portfolio/image1.jpg">
+					<p class="caption">The introduction of Hidden Valley Ranch seasoning shakers <br>helped the brand expand into the seasoning category.</p>
+				</div>
+				<ul class="list margin-top-20">
+					<li>Building on its strong foundation in natural personal care, our Burt’s Bees brand expanded into the color cosmetics category with the introduction of Burt’s Bees Beauty. The cosmetics line — foundation, concealer, powder, blush, eyeshadow, eyeliner and mascara made with natural ingredients — is the biggest product launch in the brand’s 30-year history.</li>
+					<li>The Hidden Valley Ranch brand repositioned its dry products as flavor enhancers, giving consumers even more ways to enjoy the taste of ranch. This, along with expanded distribution of Hidden Valley Ranch seasoning shakers and the launch of Hidden Valley Ranch Simply Dinners&trade; breading prep kit, is enabling the brand to compete in the larger seasoning category.</li>
+					<li>Licensing partnerships that extended our brands into new categories and generated profitable revenue streams included Kingsford spices, Kingsford ribs and entrees, Clorox Fraganzia<sup>&reg;</sup> laundry care, Brita Pro&trade; home softeners and filtration systems, and Kingsford wood pellets.</li>
+				</ul>
+			</div>
+
+			<div class="portfolioRight fade fade--left">
+				<div class="portfolioRight__image">
+					<img src="../_images/strategy/portfolio/image2.png">
+					<p class="caption">Natural Vitality, the No. 1 anti-stress and sleep brand <br>in the natural channel,<sup>1</sup> is part of the family of brands <br>acquired as part of the Nutranext acquisition.</p>
+				</div>
+
+				<div class="portfolioRight__bar">
+					<h2 class="portfolioRight__title">What’s Next</h2>
+					<div class="arrow"></div>
+				</div>
+
+				<p>As part of our ongoing effort to accelerate growth through acquisitions of leading brands in fast-growing categories, we acquired Nutranext, a health-and-wellness company based in Sunrise, Florida. The company manufactures and markets leading dietary supplement brands, including Rainbow Light, Natural Vitality and Neocell, in retail and e-commerce channels. The acquisition brings significant scale and breadth to our dietary supplements business as we continue to drive portfolio momentum with a focus on health and wellness.</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="content margin-top-30">
+				<img src="../_images/strategy/portfolio/image3.jpg" class="floatLeft margin-top-40 margin-right-40 fade fade--right portfolioImageMobile">
+
+				<div class="fade fade--left">
+					<div class="portfolioCallout--1">
+					<div class="calloutNum calloutNum--green">45%+</div>
+					<div class="calloutTextLarge calloutText--green">GROWTH IN<br>E-COMMERCE<br>SALES</div>
+					</div>
+					<ul class="list noWrap">
+					<li>Sales in the e-commerce channel grew more than 45 percent through partnerships with fast-growing retailers and strategic investments in high-value digital media. E-commerce now represents 6 percent of company sales.</li>
+					<li>We further expanded our health-and-wellness portfolio with the acquisition of Nutranext, a leading manufacturer and marketer of vitamins and dietary supplements.</li>
+					<li>We shifted investments in our International segment toward more profitable businesses, establishing five growth vectors that are expected to represent approximately 30 percent of our portfolio by 2021.</li>
+					</ul>
+				</div>
+
+				<div class="fade fade--up">
+					<h1 class="heading margin-top-60">Corporate Responsibility Highlights</h1>
+					<h2 class="sectionSubHeading">Safeguard families through initiatives that promote health, education and safety.</h2>
+					
+					<div class="portfolioCallout--2">
+					<div class="calloutNum calloutNum--lOrange">55,000+</div>
+					<div class="calloutTextLarge calloutText--orange">CASES <br>OF PRODUCT<br>DONATED</div>
+					<div class="calloutTextSmall calloutTextSmall--lOrange">Including Clorox liquid <br>bleach, Glad trash bags, <br>Clorox disinfecting wipes <br>and Burt’s Bees lip balms.</div>
+					</div>
+					
+					<ul class="list margin-top-20">
+						<li>In response to disasters such as hurricanes Harvey, Irma and Maria and the California wildfires, we donated more than 55,000 cases of Clorox liquid bleach, Glad trash bags, Clorox disinfecting wipes and Burt’s Bees lip balms, working with our partner, the American Red Cross. The Clorox Company Foundation donated an additional $350,000 to the American Red Cross, our Professional Products Division gave $20,000 and employees donated $90,000 through our workplace giving program, which included matching funds from the foundation.</li>
+						<li>To help extend the life of food donations, we donated 97 truckloads of Glad food storage products to Feeding America to support 45 of their member food banks nationally.</li>
+						<li>Expanding our commitment to health and wellness, we pledged $1 million in grants over four years to support urban farms. These farms are helping to strengthen disadvantaged communities by addressing food scarcity through nutrition education and by removing barriers to eating nutritious food.</li>
+					</ul>
+				</div>
+
+				<div class="floatRight fade fade--left margin-bottom-20">
+					<img src="../_images/strategy/portfolio/image4.png">
+					<p class="caption margin-top-0">In partnership with Stephen Curry, the Brita brand launched a grant program to provide schools <br>with access to clean, safe and sustainable drinking water.</p>
+
+					<img src="../_images/strategy/portfolio/image5.jpg" class="margin-top-40 margin-left-50 portfolioImage--5">
+					<p class="caption margin-left-50 portfolioCaption--5">Brita Canada expanded its Filter for Good program to <br>provide cleaner drinking water to 120,000 Kenyans.</p>
+				</div>
+				<div class="fade fade--up">
+					<ul class="list margin-top-20">
+						<li>The Burt’s Bees brand began an initiative to strengthen 10 global supplier communities’ capabilities in areas such as access to clean water, women’s and children’s empowerment, health and safety, and biodiversity by 2020. In Tanzania and Vietnam, we provided protective equipment to nearly 500 beekeepers, while in Burkina Faso we supported training of 3,000 women to build safer, fuel-efficient cookstoves to roast shea butter kernels. An additional 2,600 women received training in the processing of quality kernels, development of cooperatives and establishment of savings associations to improve their economic empowerment.</li>
+						<li>
+							Our brands continued to engage in cause-marketing programs that are both consistent with their purpose and meaningful to consumers.
+							<ul class="list list--indented">
+								<li>The Clorox brand signed a three-year partnership with Evidence Action to supply bleach for its bleach dispenser program in Africa that will provide safe drinking water to up to 4 million people in Kenya and Uganda by 2020. This is an expansion of the Clorox Safe Water Project, which began in 2012 and now reaches 25,000 people in rural Peru.</li>
+								<li>The Brita brand partnered with the Alliance for a Healthier Generation and basketball superstar Stephen Curry to launch Filter for the Future, a grant program that provides schools with access to clean, safe and sustainable drinking water. Through the purchase of specially marked products, consumers are helping support the initiative to equip approximately 100 schools with Brita hydration stations that will enable kids to fill up their reusable bottles with filtered water instead of relying on single-use plastic water bottles.</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="fade fade--up">
+					<ul class="list">
+						<ul class="list list--indented">
+							<li>Brita Canada expanded its Filter for Good&trade; program to help provide cleaner drinking water to 120,000 people in Kenya by committing to support the completion of a second borehole, a type of well, by the end of our 2019 fiscal year. Through a continued partnership with the global nonprofit WE, the brand’s initiative also impacts education, since many young girls who had been responsible for retrieving water for their families will now be able to attend school.</li>
+							<li>In New York, the Clorox brand partnered with local nonprofit Thrive Collective and more than 250 volunteers from the local community to clean and transform a former school into a youth arts center. The freshly cleaned space will serve as Thrive Collective’s new headquarters and will create new possibilities with arts and mentoring programs for at-risk youth in Harlem.</li>
+							<li>The Kingsford brand donated to the Movember Foundation and encouraged men on social media to help support efforts to improve men’s health, with support from former professional football player Vince Wilfork.</li>
+							<li>Our Clorox brand partnered with DonorsChoose.org to provide Clorox disinfecting wipes to schools in January — when classrooms are low on supplies — in addition to the more traditional fall back-to-school season when cold and flu begins in earnest.</li>
+						</ul>
+					</ul>
+					<p class="footnote margin-top-60"><sup>1</sup>IRI/SPINS, POS retail dollar sales ending Dec. 31, 2017.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<img src="../_images/strategy/portfolio/wave.png" class="portfolioWave">
+
+	<div class="stratScreen"></div>
+	<div class="progressContent progressContent--3">
+		<div class="progressTab">
+			<h3 class="progressTab__title">Our Progress</h3>
+			<div class="arrow"></div>
+		</div>
+		
+		<div class="progressContent--3__wrap">
+			<h2 class="progressContent__heading">Every year, we support the communities where<br> we live and do business.</h2>
+			
+			<p>Five years into our strategy, we’ve made substantial contributions to the well-being of our neighbors and our global community. From fiscal years 2013 to 2018, we have given more than $25 million in foundation and corporate cash grants to support community initiatives, with a particular focus on nonprofit organizations in the areas of K-12 education, youth development, cultural arts organizations, health initiatives and, more recently, urban farming.</p>
+
+			<div class="progressContent--3__boxes">
+				<div class="progressContent--3__boxFull">
+					<div class="calloutTitle calloutTitle--lBlue">CLOROX EMPLOYEES</div>
+					<div class="calloutTextMed calloutText--blue">Volunteered</div>
+					<div class="calloutNum calloutNum--blue">644,553 hours</div>
+					<div class="calloutTextSmall calloutTextSmall--blue">from calendar years 2012-17</div>
+				</div>
+
+				<div class="progressContent--3__boxHalf">
+					<div class="calloutTitle calloutTitle--lBlue">Foundation and Corporate cash grants</div>
+					<div class="calloutTextMed calloutText--blue">Gave</div>
+					<div class="calloutNum calloutNum--blue">$25M+</div>
+					<div class="calloutTextSmall calloutTextSmall--blue">in community support from <br>fiscal years 2013-18</div>
+				</div>
+
+				<div class="progressContent--3__boxHalf">
+					<div class="calloutTitle calloutTitle--lBlue">THE CLOROX<br> COMPANY</div>
+					<div class="calloutTextMed calloutText--blue">Donated</div>
+					<div class="calloutNum calloutNum--blue">$44.4M</div>
+					<div class="calloutTextSmall calloutTextSmall--blue">in products from fiscal <br>years 2013-18</div>
+				</div>
+			</div>
+
+			<p class="margin-top-20">During the same time frame, the company made $44.4 million in product donations,  while our brands invested more than $6 million in cause-marketing campaigns to make a difference in safe drinking water, education and youth leadership, pet adoption and men’s health, to name a few projects aligned with their purposes.</p>
+			<p>From the 2012 to 2017 calendar years, our employees volunteered 644,553 hours of their time to improve their local communities, effort that is valued at nearly $16 million.</p>
+			<p>Consistent with our values as a company, we will continue to be committed to the well-being of our communities.</p>
+		</div>
+	</div>
+</div>
+<div class="subnav subnav--strategy">
+	<div class="container">
+		<div class="row">
+			<ul class="subNav__items">
+				<li><a href="index-2.html">2020 <br>Strategy</a></li>
+				<li><a href="people.html">Engage Our <br>People</a></li>
+				<li><a href="value.html">Drive Superior <br>Consumer Value</a></li>
+				<li><a href="portfolio.html">Accelerate <br>Portfolio Momentum</a></li>
+				<li><a href="growth.html">Fund <br>Growth</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script src="../../unpkg.com/imagesloaded%404.1.4/imagesloaded.pkgd.min.js"></script>
+<script src="../_js/jquery.fancybox.min.js"></script>
+<script src="../_js/jquery.mousewheel.js"></script>
+<script src="../_js/greensock/TimelineMax.min.js"></script>
+<script src="../_js/greensock/TweenMax.min.js"></script>
+<script src="../_js/ScrollMagic.js"></script>
+<script src="../_js/plugins/jquery.ScrollMagic.js"></script>
+<script src="../_js/plugins/debug.addIndicators.js"></script>
+<script src="../_js/greensock/plugins/DrawSVGPlugin.min.js"></script>
+<script src="../_js/plugins/animation.gsap.js"></script>
+<script src="../_js/jquery.cycle2.min.js"></script>
+<script src="../_js/main031f.js?v.2018.2"></script><script>strategy();</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"90a95d8474","applicationID":"2526212","transactionName":"MgRaYxZVDBIDW0BbWQtObUUNGxEVEFlAV1EcTkhYFkAEDg5RWxxGDRE=","queueTime":0,"applicationTime":0,"atts":"HkNZFV5PHxw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from annualreport.thecloroxcompany.com/strategy/portfolio.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Feb 2019 19:22:22 GMT -->
+</html>

@@ -1,4 +1,10 @@
-﻿ul {
+﻿/*
+#root{
+    color: #fff;
+}
+*/
+/* Grabs parents*/
+ul {
     list-style: none;
     font-size: x-large;
 }
@@ -17,7 +23,7 @@ h6, h5, h4 {
     display: flex;
     flex-flow: row;
     flex: 1 0 auto;
-    padding: 12em;
+    padding: 1em;
 }
 
 .row {
@@ -77,7 +83,7 @@ h6, h5, h4 {
 }
 
 .pg-2018-scorecard {
-    display: none;
+  
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
