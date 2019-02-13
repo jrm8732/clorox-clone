@@ -55,5 +55,7 @@
 }
 
 .graph-wrapper{
-    width:180px;
+    width:160px;
+    border-left: solid blue 2px;
+    height:auto;
 }
