@@ -1,6 +1,6 @@
-.performance-main h1{
+.title{
     position:relative;
-    top: 18%;
+    top: 25%;
     left:25%;
 }
 .performance-main{
@@ -27,7 +27,7 @@
     top:316px;
     left:960px;
     width: 180px;
-    height: 115px;
+    height: 160px;
     z-index:99;
 }
 .sr2{
@@ -35,13 +35,13 @@
     top:560px;
     left:320px;
     width:940px;
-    height: 115px;
+    height: 160px;
 }
 .sr3{
     position: absolute;
     top:800px;
     right:600px;
-    height: 115px;
+    height: 160px;
     width:940px;
 }
 .shelf-col{
@@ -55,7 +55,20 @@
 }
 
 .graph-wrapper{
-    width:160px;
+    width:215px;
     border-left: solid blue 2px;
-    height:auto;
+    height:150px;
+    
 }
+.graph-wrapper h5{
+    font-size:10px;
+}
+.graph-wrapper h6{
+    font-size: 8px;
+}
+.graph-wrapper svg{
+    float:left;
+}
+ .sr3 :nth-child(3) > svg{
+     margin-top: 11px;
+ }
