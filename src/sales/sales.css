@@ -6,7 +6,7 @@
 /* Grabs parents*/
 ul {
     list-style: none;
-    font-size: x-large;
+    font-size: large;
 }
 
 p {
@@ -24,18 +24,21 @@ h6, h5, h4 {
     flex-flow: row;
     flex: 1 0 auto;
     padding: 1em;
+    margin-left:-160px;
 }
 
 .row {
-    margin: 7em;
-    width: 60%;
+    margin: 3em;
+    width: 40px;
     padding: .5em;
     display: flex;
     flex-flow: row nowrap;
+    margin-right:5px;
 }
 
 .column {
     height: 40%;
+    width:700px;
 }
 
 .g0 {
@@ -90,5 +93,12 @@ h6, h5, h4 {
     flex: 1 0 auto;
     position: relative;
     top: 40%;
+
+}
+
+.g1 {
+  
+ 
+ margin: auto;
 
 }

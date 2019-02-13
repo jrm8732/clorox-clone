@@ -4,6 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import Sales from '../sales/index.js'
 import GlobalFootprint from '../global_footprint/index.js'
+import Performance from '../performance/index.js'
 import {
 	Route,
 	NavLink,
@@ -42,6 +43,16 @@ class Stuff extends Component {
         </HashRouter>
                     <p className="legend">Legend 3</p>
                 </div>
+
+                <HashRouter>
+          <div>
+            <h1>Performance</h1>
+            <div className="content">
+              <Route path="/Performance" component={Performance}/>
+              <Performance />
+            </div>
+          </div>
+        </HashRouter>
             </Carousel>
         );
     }
