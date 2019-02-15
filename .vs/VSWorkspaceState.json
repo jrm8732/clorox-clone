@@ -2,10 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\global_footprint",
     "\\src\\Main",
     "\\src\\sales"
   ],
-  "SelectedNode": "\\src\\global_footprint\\index.js",
+  "SelectedNode": "\\src\\global_footprint",
   "PreviewInSolutionExplorer": false
 }
