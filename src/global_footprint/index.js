@@ -23,7 +23,6 @@ class GlobalFootprint extends Component {
                         <li className='lblue-g J'><LBFI/>Joint Ventures</li>
                         <li className="purple-g R"><PFI/>R&D Facilities</li>
                     </ul>
-          
                 </div>
                 <NorthAmerica />
                 <Europe />

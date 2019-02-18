@@ -1,6 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+      <title>Josh Maddox Test</title>
+      <meta name="description" content="Blueprint: Horizontal Drop-Down Menu" />
+      <meta name="keywords" content="horizontal menu, microsoft menu, drop-down menu, mega menu, javascript, jquery, simple menu" />
+      <meta name="author" content="Codrops" />
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" type="text/css" href="css/default.css" />
+      <link rel="stylesheet" type="text/css" href="css/component.css" />
+      <script src="js/modernizr.custom.js"></script>
+
+
+    <meta charset="UTF-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1118.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="_images/global/shareImage.png?v.2018.1" />
+
+    <!-- <link rel="stylesheet" href="_css/maind80a.css?v.2018.4"> -->
+
+<!--<link rel="stylesheet" href="_js/jquery.fancybox.min.css"> -->
+<script src="../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../assets.adobedtm.com/cfd7100a02cbfa40b2c485d333da22f89ccabd9c/satelliteLib-e1a96af74edf26406b64b1c5cb0abedb7b5a6c6c.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+      <style>
+          * {box-sizing: border-box;}
+          
+          html { 
+      background: url(http://blacksburgwebdesign.com/wp-content/uploads/2019/02/dfvakj.jpg) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+          body { 
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          
+          .header {
+            overflow: hidden;
+            background-color: #f1f1f1;
+            bottom: 0;
+            padding: 10px 10px;
+            display:flex;
+          }
+          
+          .header a {
+            float: left;
+          /*  color: black; */
+          color:white;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px; 
+            line-height: 25px;
+            border-radius: 4px;
+          }
+          
+          .header a.logo {
+            font-size: 25px;
+            font-weight: bold;
+          }
+          
+          .header a:hover {
+            background-color: #ddd;
+            color: black;
+          }
+          
+          .header a.active {
+            background-color: dodgerblue;
+            color: white;
+          }
+          
+          .header-right {
+            float: right;
+            position:right;
+            flex: .3;
+            margin-top: 25px;
+          }
+          
+
+          #page-container {
+  position: relative;
+  min-height: 100vh;
+}
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+.footer {
+  position: bottom;
+  left: 0;
+  bottom: 0%;
+  width: 100%;
+  background-color: white;
+  color: white;
+  text-align: center;
+  padding: 50px 10px;
+  margin-block-start: 30%;
+}
+.footer a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px; 
+            line-height: 25px;
+            border-radius: 4px;
+          }
+          
+          .footer a.logo {
+            font-size: 25px;
+            font-weight: bold;
+          }
+          
+          .footer a:hover {
+            background-color: #ddd;
+            color: black;
+          }
+          
+          .footer a.active {
+            background-color: dodgerblue;
+            color: white;
+          }
+          
+          .footer-right {
+            float: right;
+          }
+    
+          div.josh{
+            background: green;
+          }
+    
+          .carousel.carousel-slider .control-arrow {
+          top: 0;
+          color: #fff;
+          font-size: 26px;
+          bottom: 0;
+          margin-top: 0;
+          padding: 135px; }
+          
+          @media screen and (max-width: 500px) {
+            .header a {
+              float: none;
+              display: block;
+              text-align: left;
+            }
+            
+            .header-right {
+              float: none;
+            }
+          }
+          </style>
+     
+
+
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta
@@ -24,9 +183,122 @@
     -->
     <title>React App</title>
   </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+  <body> 
+      <div class="container">
+
+            <!--
+           <header class="clearfix">
+            <span>Del Monte</span>
+            <h1>Quality</h1>
+            <nav>
+              <a href="http://tympanus.net/Blueprints/FullWidthImageSlider/" class="icon-arrow-left" data-info="previous Blueprint">Previous Blueprint</a>
+              <a href="http://tympanus.net/codrops/?p=14426" class="icon-drop" data-info="back to the Codrops article">back to the Codrops article</a>
+            </nav>
+            </header>	
+            -->
+
+
+          
+
+            <!--
+            <div class="main">
+            <nav id="cbp-hrmenu" class="cbp-hrmenu">
+              <ul>
+                <li>
+                  <a href="#">Menu</a>
+                  <div class="cbp-hrsub" style="z-index: 1;">
+                    <div class="cbp-hrsub-inner"> 
+                      <div>
+                        <h4>2020 Strategy</h4>
+                        <ul>
+                          <li><a href="#contact">2020 Strategy</a></li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h4>Scorecard</h4>
+                        <ul>
+                          <li><a href="#">Scorecard</a></li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h4>Recognition</h4>
+                        <ul>
+                          <li><a href="#">Recognition</a></li>
+                        </ul>
+                        <h4>Governance</h4>
+                        <ul>
+                          <li><a href="#">???</a></li> 
+                        </ul>
+                      </div>
+                    </div> 
+
+
+                  -->
+                  <!-- /cbp-hrsub-inner -->
+               <!--   </div>  /cbp-hrsub -->
+               <!--  </li> /cbp-hrsub -->
+              <!--  </li>
+              </ul>
+            </nav>
+              </div>
+          -->
+
+          
+
+          
+        </div>
+<!--
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="js/cbpHorizontalMenu.min.js"></script>
+
+        <script>
+          $(function() {
+            cbpHorizontalMenu.init();
+          });
+        </script>
+      -->
+      <p > <font color="grey"> _ </font> </p>
+      <p > <font color="grey"> _ </font> </p>
+      <p > <font color="grey"> _ </font> </p>
+     
+      <div class="header">
+          <div id="menu-container">  </div>
+       <!--   <a href="#default" class="logo" >Del Monte</a> -->
+          <div class="header-right">
+            <a class="active" href="#home">Home</a>
+            <a href="#stuff">Stuff</a>
+            <a href="#contact">About</a>
+          </div>
+       
+      </div>
+
+  
+
+
+   
+     <!-- 
+      <div style="padding-left:10px" class="josh">
+        <h1>Responsive Header</h1>
+        <p>Resize the browser window to see the effect.</p>
+        <p>Some content..</p>
+      </div> <div id="root" style="z-index: 3;"></div>
+    -->
+      
+      <div id="root" style="z-index: 4;"></div>
+
+      <!--
+      <div class="footer">
+          <a href="#default" class="logo">Del Monte</a>
+          <div class="header-right">
+            <a class="active" href="#home">Home</a>
+            <a href="#stuff">Stuff</a>
+            <a href="#contact">About</a>
+          </div>
+      </div>
+      
+      <footer id="footer"></footer>
+    -->
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -37,5 +309,32 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+
+  <script src="../unpkg.com/imagesloaded%404.1.4/imagesloaded.pkgd.min.js"></script>
+  <script src="_js/jquery.fancybox.min.js"></script>
+  <script src="_js/jquery.mousewheel.js"></script>
+  <script src="_js/greensock/TimelineMax.min.js"></script>
+  <script src="_js/greensock/TweenMax.min.js"></script>
+  <script src="_js/ScrollMagic.js"></script>
+  <script src="_js/plugins/jquery.ScrollMagic.js"></script>
+  <script src="_js/plugins/debug.addIndicators.js"></script>
+  <script src="_js/greensock/plugins/DrawSVGPlugin.min.js"></script>
+  <script src="_js/plugins/animation.gsap.js"></script>
+  <script src="_js/jquery.cycle2.min.js"></script>
+  <script src="_js/main031f.js?v.2018.2"></script><script src="_js/home.js"></script>
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"90a95d8474","applicationID":"2526212","transactionName":"MgRaYxZVDBIDW0BbWQtObUUNGwsPBl1MHEYNEQ==","queueTime":0,"applicationTime":1,"atts":"HkNZFV5PHxw=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+</body>
+
+
+<div class="footer">
+    <a href="#default" class="logo">Del Monte</a>
+    <div class="header-right">
+      <a class="active" href="#home">Home</a>
+      <a href="#stuff">Stuff</a>
+      <a href="#contact">About</a>
+    </div>
+</div>
+
+<!-- <footer id="footer"></footer> -->
+
 </html>

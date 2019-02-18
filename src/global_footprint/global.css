@@ -3,6 +3,7 @@
     font-size: 16px;
     width: 100vw;
     height: 100vh;
+        color: #000;
   }
 .blue-g {
     color: #005cb9;
@@ -81,7 +82,7 @@
 }
 .parent{
     position:relative;
-    display:none;
+    
 }
 .list ul{
     font-size:1rem;

@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from annualreport.thecloroxcompany.com/financials/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Feb 2019 19:22:49 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="x-ua-compatible" content="IE=Edge"/>
+<meta charset="UTF-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1118.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:image" content="../_images/global/shareImage.png?v.2018.1" />
+
+<title>Clorox 2018 Integrated Annual Report</title>
+<link rel="stylesheet" href="../_css/maind80a.css?v.2018.4">
+<link rel="stylesheet" href="../_js/jquery.fancybox.min.css">
+<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	    <script src="../../assets.adobedtm.com/cfd7100a02cbfa40b2c485d333da22f89ccabd9c/satelliteLib-e1a96af74edf26406b64b1c5cb0abedb7b5a6c6c.js"></script>
+	</head>
+<body class="brandRecognitions">
+<header>
+	<div class="header__hamburger">
+		<span>MENU</span>
+		<div class="header__hamburger__bars">
+			<div></div>
+		</div>
+	</div>
+
+	<a class="logoWrap" href="../index-2.html">
+		<img class="header__logo" src="../_images/global/logo.svg">
+	</a>
+    <div class="container container--header">
+        <div class="row">
+			<div class="header__links">
+				<span class="ir">2018 Integrated Annual Report</span>
+				<ul>
+					<li><a class="header__links__resources" href="#">Resources</a></li>
+					<li><a class="header__links__download" href="#">Download</a></li>
+					<li><a class="header__links__search" href="#"><i class="fas fa-search"></i></a></li>
+					<li class="socialLink facebook" id="facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+					<li class="socialLink twitter" id="twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+					<li class="socialLink linkedIn" id="linkedIn"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+					<li class="socialLink"><a href="mailto:corporate.communications@clorox.com"><i class="fas fa-envelope"></i></a></li>
+				</ul>
+			</div>
+
+			<div class="headerSearch">
+				<div class="headerSearch__relativeWrapper">
+					<form action="https://annualreport.thecloroxcompany.com/search.php">
+						<input class="headerSearch__input" type="text" class="search" name="q" id="tipue_search_input" autocomplete="off" placeholder="Search" required="">
+						<span class="headerSearch__del">X</span>
+					</form>
+				</div>
+			</div>
+
+			<div class="headerResources">
+				<div class="headerResources__relativeWrapper">
+					<ul>
+						<li><a href="../about.html">About This Report</a></li>
+						<li><a href="../materiality.html">Materiality Overview</a></li>
+						<li><a href="../gri.html">GRI Content Index</a></li>
+						<li><a href="../info.html">Stockholder Information</a></li>
+						<li><a target="_blank" href="https://www.thecloroxcompany.com/">The Clorox Company</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="downloads">
+				<div class="headerResources__relativeWrapper">
+					<ul>
+						<li><a href="../Clorox_2018_Integrated_Report9530.pdf?v10-11-2018" target="_blank">Full PDF</a></li>
+						<li><a href="../Clorox_2018_Executive_Summary_English.pdf" target="_blank">Executive Summary English</a></li>
+						<li><a href="../Clorox_2018_Executive_Summary_Spanish.pdf" target="_blank">Executive Summary Spanish</a></li>
+					</ul>
+				</div>
+			</div>
+        </div>
+	</div>
+
+	<nav class="mainNav">
+		<div class="mainNav__box mainNav__box--1">
+			<a class="mainNav__mainLink" href="../ceo-letter/index.html">CEO Letter</a>
+
+			<img src="../_images/global/nav1.png" class="mainNav__product mainNav__product--1">
+		</div>
+
+		<div class="mainNav__box mainNav__box--2">
+			<div class="mainNav__linkWrap">
+				<a class="mainNav__mainLink" href="../strategy/index.html">2020 Strategy</a>
+
+				<ul class="secondaryNav">
+					<li><a href="../strategy/people.html">Engage our People</a></li>
+					<li><a href="../strategy/value.html">Drive Superior Consumer Value</a></li>
+					<li><a href="../strategy/portfolio.html">Accelerate Portfolio Momentum</a></li>
+					<li><a href="../strategy/growth.html">Fund Growth</a></li>
+				</ul>
+			</div>
+
+			<img src="../_images/global/nav2.png" class="mainNav__product mainNav__product--2">
+		</div>
+
+		<div class="mainNav__box mainNav__box--3">
+			<a class="mainNav__mainLink" href="../innovation/index.html">Innovation</a>
+
+			<img src="../_images/global/nav3.png" class="mainNav__product mainNav__product--3">
+		</div>
+
+		<div class="mainNav__box mainNav__box--4">
+			<div class="mainNav__linkWrap">
+				<a class="mainNav__mainLink" href="../scorecard/index.html">Scorecard</a>
+
+				<ul class="secondaryNav">
+					<li><a href="../scorecard/footprint.html">Global Footprint</a></li>
+					<li><a href="../scorecard/performance.html">Performance</a></li>
+					<li><a href="../scorecard/product.html">Product</a></li>
+					<li><a href="../scorecard/people.html">People</a></li>
+					<li><a href="../scorecard/community.html">Community</a></li>
+					<li><a href="../scorecard/planet.html">Planet</a></li>
+				</ul>
+			</div>
+
+			<img src="../_images/global/nav4.png" class="mainNav__product mainNav__product--4">
+		</div>
+
+		<div class="mainNav__box mainNav__box--5">
+			<div class="mainNav__linkWrap">
+				<a class="mainNav__mainLink" href="../recognitions/index.html">Recognitions</a>
+
+				<ul class="secondaryNav">
+					<li><a href="../recognitions/index.html">Company Recognitions</a></li>
+					<li><a href="../recognitions/brand.html">Brand Recognitions</a></li>
+				</ul>
+			</div>
+			<img src="../_images/global/nav5.png" class="mainNav__product mainNav__product--5">
+		</div>
+
+		<div class="mainNav__box mainNav__box--6">
+			<a class="mainNav__mainLink" href="index.html">Financials</a>
+
+			<img src="../_images/global/nav6.png" class="mainNav__product mainNav__product--6">
+		</div>
+
+		<div class="mainNav__box mainNav__box--7">
+			<div class="mainNav__linkWrap">
+				<a class="mainNav__mainLink" href="../governance/index.html">Governance</a>
+
+				<ul class="secondaryNav">
+					<li><a href="../governance/board.html">Board of Directors</a></li>
+					<li><a href="../governance/committee.html">Executive Committee</a></li>
+				</ul>
+			</div>
+
+			<img src="../_images/global/nav7.png" class="mainNav__product mainNav__product--7">
+		</div>
+
+		<div class="mainNav__box mainNav__box--mobile">
+			<ul>
+				<li class="facebook" id="facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+				<li class="twitter" id="twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+				<li class="linkedIn" id="linkedIn"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+				<li><a href="mailto:corporate.communications@clorox.com"><i class="fas fa-envelope"></i></a></li>
+			</ul>
+		</div>
+	</nav>
+</header>
+<div class="interiorWrapper interiorWrapper--financials">
+	<div class="container">
+		<div class="row">
+			<div class="hero">
+				<h1 class="pageTitle pageTitle--visible">financial stAtements</h1>
+			</div>
+		</div>
+
+		<div class="financialsMobile">
+			<a href="earnings.pdf" target="_blank"><h3 class="recogsAccordion__title recogsAccordion__title--financials">Condensed Consolidated Statements of Earnings</h3></a>
+			<a href="income.pdf" target="_blank"><h3 class="recogsAccordion__title recogsAccordion__title--financials">Condensed Consolidated Statements of Comprehensive Income</h3></a>
+			<a href="balance.pdf" target="_blank"><h3 class="recogsAccordion__title recogsAccordion__title--financials">Condensed Consolidated Balance Sheets</h3></a>
+			<a href="equity.pdf" target="_blank"><h3 class="recogsAccordion__title recogsAccordion__title--financials">Condensed Consolidated Statements of Stockholders’ Equity</h3></a>
+			<a href="cash-flows.pdf" target="_blank"><h3 class="recogsAccordion__title recogsAccordion__title--financials">Condensed Consolidated Statements of Cash Flows</h3></a>
+			<a href="financial-statements.pdf" target="_blank"><h3 class="recogsAccordion__title recogsAccordion__title--financials">Report of Independent Registered Public Accounting Firm on Condensed Financial Statements</h3></a>
+			<a href="nonfinancial.pdf" target="_blank"><h3 class="recogsAccordion__title recogsAccordion__title--financials">Report of Independent Accountants on Review of Nonfinancial Information</h3></a>
+		</div>
+		
+		<div class="financialAccordion recogsAccordion recogsAccordion--1 active">
+			<h3 class="recogsAccordion__title recogsAccordion__title--financials">Condensed Consolidated Statements of Earnings</h3>
+			<div class="row">
+				<div class="financialTableWrap">
+					<table class="financialTable">
+						<tr>
+							<th>Years ended June 30<br> <strong>Dollars in millions, except share and per share data</strong></th>
+							<th>2018</th>
+							<th>2017</th>
+							<th>2016</th>
+						</tr>
+									
+						<tr class="spaceTop">
+							<td>Net sales</td>
+							<td><span class="dollar">$</span> 6,124</td>
+							<td><span class="dollar">$</span> 5,973</td>
+							<td><span class="dollar">$</span> 5,761</td>
+						</tr>
+						<tr class="borderSmall">
+							<td>Cost of products sold</td>
+							<td>3,449</td>
+							<td>3,302</td>
+							<td>3,163</td>
+						</tr>
+						<tr>
+							<td>Gross profit</td>
+							<td>2,675</td>
+							<td>2,671</td>
+							<td>2,598</td>
+						</tr>
+						<tr class="spaceTop">
+							<td>Selling and administrative expenses</td>
+							<td>837</td>
+							<td>810</td>
+							<td>806</td>
+						</tr>
+						<tr>
+							<td>Advertising costs</td>
+							<td>570</td>
+							<td>599</td>
+							<td>587</td>
+						</tr>
+						<tr>
+							<td>Research and development costs</td>
+							<td>132</td>
+							<td>135</td>
+							<td>141</td>
+						</tr>
+						<tr>
+							<td>Interest expense</td>
+							<td>85</td>
+							<td>88</td>
+							<td>88</td>
+						</tr>
+						<tr class="borderSmall">
+							<td>Other (income) expense, net</td>
+							<td class="par">(3)</td>
+							<td>6</td>
+							<td class="par">(7)</td>
+						</tr>
+						<tr>
+							<td>Earnings from continuing operations before income taxes</td>
+							<td>1,054</td>
+							<td>1,033</td>
+							<td>983</td>
+						</tr>
+						<tr class="borderSmall">
+							<td>Income taxes on continuing operations</td>
+							<td>231</td>
+							<td>330</td>
+							<td>335</td>
+						</tr>
+						<tr>
+							<td>Earnings from continuing operations</td>
+							<td>823</td>
+							<td>703</td>
+							<td>648</td>
+						</tr>
+						<tr class="borderSmall">
+							<td>Losses from discontinued operations, net of tax</td>
+							<td>—</td>
+							<td class="par">(2)</td>
+							<td>—</td>
+						</tr>
+						<tr class="borderBig">
+							<td>Net earnings</td>
+							<td><span class="dollar">$</span> 823</td>
+							<td><span class="dollar">$</span> 701</td>
+							<td><span class="dollar">$</span> 648</td>
+						</tr>
+						<tr class="spaceTop">
+							<td colspan="4">Net earnings (losses) per share</td>
+						</tr>
+						<tr>
+							<td colspan="4" class="indent1x">Basic</td>
+						</tr>
+						<tr>
+							<td class="indent2x">Continuing operations</td>
+							<td><span class="dollar">$</span> 6.37</td>
+							<td><span class="dollar">$</span> 5.45</td>
+							<td><span class="dollar">$</span> 5.01</td>
+						</tr>
+						<tr class="borderSmall">
+							<td class="indent2x">Discontinued operations</td>
+							<td>—</td>
+							<td class="par">(0.02)</td>
+							<td>—</td>
+						</tr>
+						<tr class="borderBig">
+							<td class="indent1x">Basic net earnings per share</td>
+							<td><span class="dollar">$</span> 6.37</td>
+							<td><span class="dollar">$</span> 5.43</td>
+							<td><span class="dollar">$</span> 5.01</td>
+						</tr>
+						<tr class="spaceTop">
+							<td class="indent1x">Diluted</td>
+						</tr>
+						<tr>
+							<td class="indent2x">Continuing operations</td>
+							<td><span class="dollar">$</span> 6.26</td>
+							<td><span class="dollar">$</span> 5.35</td>
+							<td><span class="dollar">$</span> 4.92</td>
+						</tr>
+						<tr class="borderSmall">
+							<td class="indent2x">Discontinued operations</td>
+							<td>—</td>
+							<td class="par">(0.02)</td>
+							<td>—</td>
+						</tr>
+						<tr class="borderBig">
+							<td class="indent1x">Diluted net earnings per share</td>
+							<td><span class="dollar">$</span> 6.26</td>
+							<td><span class="dollar">$</span> 5.33</td>
+							<td><span class="dollar">$</span> 4.92</td>
+						</tr>
+						<tr class="spaceTop">
+							<td class="par">Weighted average shares outstanding (in thousands)</td>
+						</tr>
+						<tr>
+							<td class="indent1x">Basic</td>
+							<td>129,293</td>
+							<td>128,953</td>
+							<td>129,472</td>
+						</tr>
+						<tr>
+							<td class="indent1x">Diluted</td>
+							<td>131,581</td>
+							<td>131,566</td>
+							<td>131,717</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="financialAccordion recogsAccordion recogsAccordion--2">
+			<h3 class="recogsAccordion__title recogsAccordion__title--financials">Condensed Consolidated Statements of Comprehensive Income</h3>
+			<div class="row">
+				<div class="financialTableWrap">
+					<table class="financialTable">					
+						<tr>
+							<th>Years ended June 30<br> <strong>Dollars in millions</strong></th>
+							<th>2018</th>
+							<th>2017</th>
+							<th>2016</th>
+						</tr>
+			
+						<tr class="spaceTop">
+							<td>Earnings from continuing operations</td>
+							<td><span class="dollar">$</span> 823</td>
+							<td><span class="dollar">$</span> 703</td>
+							<td><span class="dollar">$</span> 648</td>
+						</tr>
+
+						<tr class="borderSmall">
+							<td>Losses from discontinued operations, net of tax</td>
+							<td>—</td>
+							<td class="par">(2)</td>
+							<td>—</td>
+						</tr>
+									
+						<tr class="borderSmall">
+							<td>Net earnings</td>
+							<td>823</td>
+							<td>701</td>
+							<td>648</td>
+						</tr>
+									
+						<tr>
+							<td class="par">Other comprehensive income (losses)</td>
+						</tr>
+
+						<tr>
+							<td class="indent1x">Foreign currency adjustments, net of tax</td>
+							<td class="par">(28)</td>
+							<td class="par">(3)</td>
+							<td class="par">(53)</td>
+						</tr>
+
+						<tr>
+							<td class="indent1x">Net unrealized gains (losses) on derivatives, net of tax</td>
+							<td>12</td>
+							<td>7</td>
+							<td>9</td>
+						</tr>
+
+						<tr class="borderSmall">
+							<td class="indent1x">Pension and postretirement benefit adjustments, net of tax</td>
+							<td>12</td>
+							<td>23</td>
+							<td class="par">(24)</td>
+						</tr>
+			
+						<tr>
+							<td>Total other comprehensive income (losses), net of tax</td>
+							<td class="par">(4)</td>
+							<td>27</td>
+							<td class="par">(68)</td>
+						</tr>
+
+						<tr class="borderBig">
+							<td>Comprehensive income</td>
+							<td><span class="dollar">$</span> 819</td>
+							<td><span class="dollar">$</span> 728</td>
+							<td><span class="dollar">$</span> 580</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="financialAccordion recogsAccordion recogsAccordion--3">
+			<h3 class="recogsAccordion__title recogsAccordion__title--financials">Condensed Consolidated Balance Sheets</h3>
+			<div class="row">
+				<div class="financialTableWrap">
+					<table class="financialTable financialTable--3col">
+						<tr>
+							<th>As of June 30<br> <strong>Dollars in millions, except share and per share data</strong></th>
+							<th>2018</th>
+							<th>2017</th>
+						</tr>
+			
+						<tr class="spaceTop">
+							<td>ASSETS</td>
+						</tr>  
+
+						<tr>
+							<td>Current assets</td>
+						</tr>
+
+						<tr>
+							<td class="indent1x">Cash and cash equivalents</td>
+							<td><span class="dollar">$</span> 131</td>
+							<td><span class="dollar">$</span> 418</td>
+						</tr>
+
+						<tr>
+							<td class="indent1x">Receivables, net</td>
+							<td>600</td>
+							<td>565</td>
+						</tr>
+
+						<tr>
+							<td class="indent1x">Inventories, net</td>
+							<td>506</td>
+							<td>459</td>
+						</tr>
+
+						<tr class="borderSmall">
+							<td class="indent1x">Prepaid expenses and other current assets</td>
+							<td>74</td>
+							<td>72</td>
+						</tr>
+			
+						<tr class="borderBig">
+							<td class="indent2x">Total current assets</td>
+							<td>1,311</td>
+							<td>1,514</td>
+						</tr>
+			
+						<tr>
+							<td>Property, plant and equipment, net</td>
+							<td>996</td>
+							<td>931</td>
+						</tr>
+
+						<tr>
+							<td>Goodwill</td>
+							<td>1,602</td>
+							<td>1,196</td>
+						</tr>
+
+						<tr>
+							<td>Trademarks, net</td>
+							<td>795</td>
+							<td>654</td>
+						</tr>
+
+						<tr>
+							<td>Other intangible assets, net</td>
+							<td>134</td>
+							<td>68</td>
+						</tr>
+
+						<tr class="borderSmall">
+							<td>Other assets</td>
+							<td>222</td>
+							<td>210</td>
+						</tr>
+									
+						<tr class="borderBig">
+							<td>Total assets</td>
+							<td><span class="dollar">$</span> 5,060</td>
+							<td><span class="dollar">$</span> 4,573</td>
+						</tr>
+									
+
+						<tr class="spaceTop">
+							<td>LIABILITIES AND STOCKHOLDERS’ EQUITY</td>
+						</tr>
+
+						<tr>
+							<td>Current liabilities</td>
+						</tr>
+
+						<tr>
+							<td class="indent1x">Notes and loans payable</td>
+							<td><span class="dollar">$</span> 199</td>
+							<td><span class="dollar">$</span> 404</td>
+						</tr>
+
+						<tr>
+							<td class="indent1x">Current maturities of long-term debt</td>
+							<td>—</td>
+							<td>400</td>
+						</tr>
+
+						<tr class="borderSmall">
+							<td class="indent1x">Accounts payable and accrued liabilities</td>
+							<td>1,001</td>
+							<td>1,005</td>
+						</tr>
+			
+						<tr>
+							<td class="indent2x">Total current liabilities</td>
+							<td>1,200</td>
+							<td>1,809</td>
+						</tr>
+
+						<tr>
+							<td>Long-term debt</td>
+							<td>2,284</td>
+							<td>1,391</td>
+						</tr>
+
+						<tr>
+							<td>Other liabilities</td>
+							<td>778</td>
+							<td>770</td>
+						</tr>
+
+						<tr class="borderSmall">
+							<td>Deferred income taxes</td>
+							<td>72</td>
+							<td>61</td>
+						</tr>
+			
+						<tr class="borderSmall">
+							<td class="indent2x">Total liabilities</td>
+							<td>4,334</td>
+							<td>4,031</td>
+						</tr>
+			
+						<tr>
+							<td>Commitments and contingencies</td>
+						</tr>
+
+						<tr>
+							<td>Stockholders’ equity</td>
+						</tr>
+
+						<tr>
+							<td>Preferred stock: $1.00 par value; 5,000,000 shares authorized; none issued or outstanding</td>
+							<td>—</td>
+							<td>—</td>
+						</tr>
+
+						<tr>
+							<td>Common stock: $1.00 par value; 750,000,000 shares authorized; 158,741,461 shares issued</td>
+						</tr>
+
+						<tr>
+							<td class="indent1x">as of June 30, 2018 and 2017; and 127,982,767 and 129,014,172 shares outstanding as of<br> June 30, 2018 and 2017, respectively</td>
+							<td>159</td>
+							<td>159</td>
+						</tr>
+
+						<tr>
+							<td>Additional paid-in capital</td>
+							<td>975</td>
+							<td>928</td>
+						</tr>
+
+						<tr>
+							<td>Retained earnings</td>
+							<td>2,797</td>
+							<td>2,440</td>
+						</tr>
+
+						<tr>
+							<td>Treasury shares, at cost: 30,758,694 and 29,727,289 shares as of June 30, 2018 and 2017, respectively</td>
+							<td class="par">(2,658)</td>
+							<td class="par">(2,442)</td>
+						</tr>
+
+						<tr class="borderSmall">
+							<td>Accumulated other comprehensive net (losses) income</td>
+							<td class="par">(547)</td>
+							<td class="par">(543)</td>
+						</tr>
+									
+						<tr class="borderSmall">
+							<td>Stockholders’ equity</td>
+							<td>726</td>
+							<td>542</td>
+						</tr>
+									
+						<tr class="borderBig">
+							<td>Total liabilities and stockholders’ equity</td>
+							<td><span class="dollar">$</span> 5,060</td>
+							<td><span class="dollar">$</span> 4,573</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="financialAccordion recogsAccordion recogsAccordion--4">
+			<h3 class="recogsAccordion__title recogsAccordion__title--financials">Condensed Consolidated Statements of Stockholders’ Equity</h3>
+
+			<div class="row">
+				<div class="financialTableWrap">
+					<table class="stockholderTable">
+						<tr>
+							<th>Dollars in millions</th>
+							<th>Shares<br>(in thousands)</th>
+							<th>Amount</th>
+							<th>Additional<br>Paid-in<br>Capital</th>
+							<th>Retained<br>Earnings</th>
+							<th>Shares<br>(in thousands)</th>
+							<th>Amount</th>
+							<th>Accumulated<br>Other<br>Comprehensive<br>Net (Losses)<br>Income</th>
+							<th>Total</th>
+						</tr>
+						<tr class="spaceTop">
+							<td><strong>Balance as of June 30, 2015</strong></td>
+							<td>158,741</td>
+							<td>$159</td>
+							<td>$775</td>
+							<td>$1,923</td>
+							<td class="par">(30,127)</td>
+							<td class="par">$(2,237)</td>
+							<td class="par">$(502)</td>
+							<td>$118</td>
+						</tr>
+						<tr>
+							<td>Net earnings</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>648</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>648</td>
+						</tr>
+						<tr>
+							<td class="par">Other comprehensive income (loss)</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td class="par">(68)</td>
+							<td class="par">(68)</td>
+						</tr>
+						<tr>
+							<td>Accrued dividends</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td class="par">(406)</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td class="par">(406)</td>
+						</tr>
+						<tr>
+							<td>Stock-based compensation</td>
+							<td></td>
+							<td></td>
+							<td>45</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>45</td>
+						</tr>
+						<tr>
+							<td>Other employee stock plan activities</td>
+							<td></td>
+							<td></td>
+							<td>48</td>
+							<td class="par">(2)</td>
+							<td>2,892</td>
+							<td>168</td>
+							<td></td>
+							<td>214</td>
+						</tr>
+						<tr class="borderSmall">
+							<td>Treasury stock purchased</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td class="par">(2,151)</td>
+							<td class="par">(254)</td>
+							<td></td>
+							<td class="par">(254)</td>
+						</tr>
+						<tr class="spaceTop">
+							<td><strong>Balance as of June 30, 2016</strong></td>
+							<td>158,741</td>
+							<td>159</td>
+							<td>868</td>
+							<td>2,163</td>
+							<td class="par">(29,386)</td>
+							<td class="par">(2,323)</td>
+							<td class="par">(570)</td>
+							<td>297</td>
+						</tr>
+						<tr>
+							<td>Net earnings</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>701</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>701</td>
+						</tr>
+						<tr>
+							<td class="par">Other comprehensive income (loss)</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>27</td>
+							<td>27</td>
+						</tr>
+						<tr>
+							<td>Accrued dividends</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td class="par">(421)</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td class="par">(421)</td>
+						</tr>
+						<tr>
+							<td>Stock-based compensation</td>
+							<td></td>
+							<td></td>
+							<td>51</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>51</td>
+						</tr>
+						<tr>
+							<td>Other employee stock plan activities</td>
+							<td></td>
+							<td></td>
+							<td>9</td>
+							<td class="par">(3)</td>
+							<td>1,164</td>
+							<td>70</td>
+							<td></td>
+							<td>76</td>
+						</tr>
+						<tr class='borderSmall'>
+							<td>Treasury stock purchased</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td class="par">(1,505)</td>
+							<td class="par">(189)</td>
+							<td></td>
+							<td class="par">(189)</td>
+						</tr>
+						<tr class="spaceTop">
+							<td><strong>Balance as of June 30, 2017</strong></td>
+							<td>158,741</td>
+							<td>159</td>
+							<td>928</td>
+							<td>2,440</td>
+							<td class="par">(29,727)</td>
+							<td class="par">(2,442)</td>
+							<td class="par">(543)</td>
+							<td>542</td>
+						</tr>
+						<tr>
+							<td>Net earnings</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>823</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>823</td>
+						</tr>
+						<tr>
+							<td class="par">Other comprehensive income (loss)</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td class="par">(4)</td>
+							<td class="par">(4)</td>
+						</tr>
+						<tr>
+							<td>Accrued dividends</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td class="par">(467)</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td class="par">(467)</td>
+						</tr>
+						<tr>
+							<td>Stock-based compensation</td>
+							<td></td>
+							<td></td>
+							<td>53</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>53</td>
+						</tr>
+						<tr>
+							<td>Other employee stock plan activities</td>
+							<td></td>
+							<td></td>
+							<td class="par">(6)</td>
+							<td>1</td>
+							<td>1,139</td>
+							<td>56</td>
+							<td></td>
+							<td>51</td>
+						</tr>
+						<tr class="borderSmall">
+							<td>Treasury stock purchased</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td class="par">(2,171)</td>
+							<td class="par">(272)</td>
+							<td></td>
+							<td class="par">(272)</td>
+						</tr>
+						<tr class="greenRow spaceTop">
+							<td><strong>Balance as of June 30, 2018</strong></td>
+							<td>158,741</td>
+							<td>$159</td>
+							<td>$975</td>
+							<td>$2,797</td>
+							<td class="par">(30,759)</td>
+							<td class="par">$(2,658)</td>
+							<td class="par">$(547)</td>
+							<td>$726</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="financialAccordion recogsAccordion recogsAccordion--5">
+			<h3 class="recogsAccordion__title recogsAccordion__title--financials">Condensed Consolidated Statements of Cash Flows</h3>
+
+			<div class="row">
+				<div class="financialTableWrap">
+					<table class="financialTable">
+						<tr>
+							<th>Years ended June 30<br> <strong>Dollars in millions</strong></th>
+							<th>2018</th>
+							<th>2017</th>
+							<th>2016</th>
+						</tr>
+				
+						<tr class="spaceTop">
+							<td>Operating activities:</td>
+						</tr>
+
+						<tr>
+							<td class="indent1x">Net earnings</td>
+							<td><span class="dollar">$</span> 823</td>
+							<td><span class="dollar">$</span> 701</td>
+							<td><span class="dollar">$</span> 648</td>
+						</tr>
+						
+						<tr class="borderSmall">
+							<td class="indent1x">Deduct: Losses from discontinued operations, net of tax</td>
+							<td>—</td>
+							<td class="par">(2)</td>
+							<td>—</td>
+						</tr>
+								
+						<tr>
+							<td class="indent2x">Earnings from continuing operations</td>
+							<td>823</td>
+							<td>703</td>
+							<td>648</td>
+						</tr>
+
+						<tr>
+							<td class="indent2x">Adjustments to reconcile earnings from continuing operations to net cash</td>
+						</tr>
+
+						<tr>
+							<td class="indent3x">provided by continuing operations:</td>
+						</tr>
+
+						<tr>
+							<td class="indent4x">Depreciation and amortization</td>
+							<td>166</td>
+							<td>163</td>
+							<td>165</td>
+						</tr>
+
+						<tr>
+							<td class="indent4x">Stock-based compensation</td>
+							<td>53</td>
+							<td>51</td>
+							<td>45</td>
+						</tr>
+
+						<tr>
+							<td class="indent4x">Deferred income taxes</td>
+							<td class="par">(23)</td>
+							<td class="par">(35)</td>
+							<td>5</td>
+						</tr>
+
+						<tr>
+							<td class="indent4x">Other</td>
+							<td>43</td>
+							<td>36</td>
+							<td>1</td>
+						</tr>
+
+						<tr>
+							<td class="indent4x">Changes in:</td>
+						</tr>
+
+						<tr>
+							<td class="indent5x">Receivables, net</td>
+							<td class="par">(24)</td>
+							<td class="par">(1)</td>
+							<td class="par">(52)</td>
+						</tr>
+
+						<tr>
+							<td class="indent5x">Inventories, net</td>
+							<td class="par">(21)</td>
+							<td class="par">(19)</td>
+							<td class="par">(45)</td>
+						</tr>
+
+						<tr>
+							<td class="indent5x">Prepaid expenses and other current assets</td>
+							<td>3</td>
+							<td class="par">(5)</td>
+							<td>6</td>
+						</tr>
+
+						<tr>
+							<td class="indent5x">Accounts payable and accrued liabilities</td>
+							<td class="par">(47)</td>
+							<td class="par">(34)</td>
+							<td>57</td>
+						</tr>
+
+						<tr class="borderSmall">
+							<td class="indent5x">Income taxes payable</td>
+							<td>1</td>
+							<td>12</td>
+							<td class="par">(62)</td>
+						</tr>
+			
+						<tr>
+							<td>Net cash provided by continuing operations</td>
+							<td>974</td>
+							<td>871</td>
+							<td>768</td>
+						</tr>
+
+						<tr class="borderSmall">
+							<td>Net cash (used for) provided by discontinued operations</td>
+							<td>—</td>
+							<td class="par">(3)</td>
+							<td>10</td>
+						</tr>
+									
+						<tr class="borderSmall">
+							<td>Net cash provided by operations</td>
+							<td>974</td>
+							<td>868</td>
+							<td>778</td>
+						</tr>
+									
+						<tr class="spaceTop">
+							<td>Investing activities:</td>
+						</tr>
+
+						<tr>
+							<td class="indent1x">Capital expenditures</td>
+							<td class="par">(194)</td>
+							<td class="par">(231)</td>
+							<td class="par">(172)</td>
+						</tr>
+
+						<tr>
+							<td class="indent1x">Businesses acquired, net of cash acquired</td>
+							<td class="par">(681)</td>
+							<td>—</td>
+							<td class="par">(290)</td>
+						</tr>
+
+						<tr class="borderSmall">
+							<td class="indent1x">Other</td>
+							<td>16</td>
+							<td>26</td>
+							<td>32</td>
+						</tr>
+			
+						<tr class="borderSmall">
+							<td>Net cash used for investing activities</td>
+							<td class="par">(859)</td>
+							<td class="par">(205)</td>
+							<td class="par">(430)</td>
+						</tr>
+									
+						<tr>
+							<td>Financing activities:</td>
+						</tr>
+
+						<tr>
+							<td class="indent1x">Notes and loans payable, net</td>
+							<td class="par">(214)</td>
+							<td class="par">(125)</td>
+							<td>426</td>
+						</tr>
+
+						<tr>
+							<td class="indent1x">Long-term debt borrowings, net of issuance costs</td>
+							<td>891</td>
+							<td>—</td>
+							<td>—</td>
+						</tr>
+
+						<tr>
+							<td class="indent1x">Long-term debt repayments</td>
+							<td class="par">(400)</td>
+							<td>—</td>
+							<td class="par">(300)</td>
+						</tr>
+
+						<tr>
+							<td class="indent1x">Treasury stock purchased</td>
+							<td class="par">(271)</td>
+							<td class="par">(183)</td>
+							<td class="par">(254)</td>
+						</tr>
+
+						<tr>
+							<td class="indent1x">Cash dividends paid</td>
+							<td class="par">(450)</td>
+							<td class="par">(412)</td>
+							<td class="par">(398)</td>
+						</tr>
+
+						<tr class="borderSmall">
+							<td class="indent1x">Issuance of common stock for employee stock plans and other</td>
+							<td>45</td>
+							<td>75</td>
+							<td>210</td>
+						</tr>
+			
+						<tr class="borderSmall">
+							<td>Net cash used for financing activities</td>
+							<td class="par">(399)</td>
+							<td class="par">(645)</td>
+							<td class="par">(316)</td>
+						</tr>
+									
+						<tr class="borderSmall">
+							<td>Effect of exchange rate changes on cash and cash equivalents</td>
+							<td class="par">(3)</td>
+							<td class="par">(1)</td>
+							<td class="par">(13)</td>
+						</tr>
+									
+						<tr class="borderSmall">
+							<td>Net increase (decrease) in cash and cash equivalents</td>
+							<td class="par">(287)</td>
+							<td>17</td>
+							<td>19</td>
+						</tr>
+									
+						<tr>
+							<td>Cash and cash equivalents:</td>
+						</tr>
+
+						<tr class='borderSmall'>
+							<td class="indent1x">Beginning of year</td>
+							<td>418</td>
+							<td>401</td>
+							<td>382</td>
+						</tr>
+								
+						<tr class="borderBig">
+							<td class="indent1x">End of year</td>
+							<td><span class="dollar">$</span> 131</td>
+							<td><span class="dollar">$</span> 418</td>
+							<td><span class="dollar">$</span> 401</td>
+						</tr>
+			
+						<tr>
+							<td>Supplemental cash flow information:</td>
+						</tr>
+
+						<tr>
+							<td class="indent1x">Interest paid</td>
+							<td><span class="dollar">$</span> 75</td>
+							<td><span class="dollar">$</span> 78</td>
+							<td><span class="dollar">$</span> 79</td>
+						</tr>
+
+						<tr>
+							<td class="indent1x">Income taxes paid, net of refunds</td>
+							<td>245</td>
+							<td>347</td>
+							<td>323</td>
+						</tr>
+
+						<tr>
+							<td>Non-cash financing activities:</td>
+						</tr>
+
+						<tr>
+							<td class="indent1x">Cash dividends declared and accrued, but not paid</td>
+							<td>123</td>
+							<td>108</td>
+							<td>104</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="financialAccordion recogsAccordion recogsAccordion--6">
+			<h3 class="recogsAccordion__title recogsAccordion__title--financials">Report of Independent Registered Public Accounting Firm on Condensed Financial Statements</h3>
+
+			<div class="row">
+				<div class="financialTableWrap">
+					<img src="../_images/financials/logo.svg" class="eyLogo">
+
+					<h3 class="subHeading">The Board of Directors and Stockholders of The Clorox Company</h3>
+					<p>We have audited, in accordance with the standards of the Public Company Accounting Oversight Board (United States), the consolidated balance sheets of The Clorox  Company as of June 30, 2018 and 2017, the related consolidated statements of earnings, comprehensive income, stockholders’ equity and cash flows for each of the three years in the period ended June 30, 2018, the related notes and the financial statement schedule in Exhibit 99.2 (collectively referred to as the “consolidated financial statements”) (not presented separately herein) and in our report dated August 14, 2018, we expressed an unqualified opinion on those consolidated financial statements. In our opinion, the information set forth in the accompanying condensed consolidated financial statements as of June 30, 2018 and 2017 and for each of the three years in the period ended June 30, 2018 (presented on pages 49 through 51) is fairly stated, in all material respects, in relation to the consolidated financial statements from which it has been derived.</p>
+ 
+					<p>We also have audited, in accordance with the standards of the Public Company Accounting Oversight Board (United States), the effectiveness of The Clorox Company’s internal control over financial reporting as of June 30, 2018, based on criteria established in Internal Control — Integrated Framework issued by the Committee of Sponsoring Organizations of the Treadway Commission (2013 framework), and our report dated August 14, 2018 (not presented separately herein) expressed an unqualified opinion thereon.</p>
+
+					<img src="../_images/financials/signature.png" class="margin-top-20">
+					<p>San Francisco, CA<br> August 14, 2018</p>
+				</div>
+			</div>
+		</div>
+		<div class="financialAccordion recogsAccordion recogsAccordion--7">
+			<h3 class="recogsAccordion__title recogsAccordion__title--financials">Report of Independent Accountants on Review of Nonfinancial Information</h3>
+
+			<div class="row">
+				<div class="financialTableWrap">
+					<img src="../_images/financials/logo.svg" class="eyLogo">
+
+					<h3 class="subHeading">The Board of Directors and Stockholders of The Clorox Company</h3>
+					<p>We have reviewed selected quantitative performance indicators (the “Subject Matter”) included in Exhibit A and as identified by the “<img src="../_images/scorecard/global/a.svg" class="aNote">” symbol presented in The Clorox Company’s (“Clorox” or “the Company”) Annual Report for the year ended June 30, 2018, or otherwise noted, in accordance with the criteria also set forth in Exhibit A (the “Criteria”). The Clorox Company’s management is responsible for the Subject Matter included in Exhibit A, in accordance with the Criteria. Our responsibility is to express a conclusion on the Subject Matter based on our review.</p>
+
+					<p>Our review was conducted in accordance with attestation standards established by the American Institute of Certified Public Accountants (AICPA) in AT-C section 105, Concepts Common to All Attestation Engagements, and AT-C section 210, Review Engagements. Those standards require that we plan and perform our review to obtain limited assurance about whether any material modifications should be made to the Subject Matter in order for it to be in accordance with the Criteria. A review consists principally of applying analytical procedures, making inquiries of persons responsible for the subject matter, obtaining an understanding of the data management systems and processes used to generate, aggregate and report the Subject Matter and performing such other procedures as we considered necessary in the circumstances. A review is substantially less in scope than an examination, the objective of which is to obtain reasonable assurance about whether the Subject Matter is in accordance with the Criteria, in all material respects, in order to express an opinion. Accordingly, we do not express such an opinion. A review also does not provide assurance that we became aware of all significant matters that would be disclosed in an examination. We believe that our review provides a reasonable basis for our conclusion.</p>
+
+					<p>In performing our review, we have complied with the independence and other ethical requirements of the Code of Professional Conduct issued by the AICPA.</p>
+
+					<p>We applied the Statements on Quality Control Standards established by the AICPA and, accordingly, maintain a comprehensive system of quality control.</p>
+
+					<p>As described in Exhibit A, the Subject Matter is subject to measurement uncertainties resulting from limitations inherent in the nature and the methods used for determining such data. The selection of different but acceptable measurement techniques can result in materially different measurements. The precision of different measurement techniques may also vary.</p>
+
+					<p>Based on our review, we are not aware of any material modifications that should be made to the selected quantitative performance indicators for the year ended June 30, 2018, or otherwise noted, in order for it to be in accordance with the Criteria.</p>
+
+					<img src="../_images/financials/signature.png" class="margin-top-20">
+					<p>San Francisco, CA<br> September 21, 2018</p>
+
+					<h3 class="subHeading margin-top-40">Exhibit A: Schedule of Selected Quantitative Performance Indicators</h3>
+					
+					<table class="reportTable">
+						<thead>
+							<tr>
+								<th>Indicator Name </th>
+								<th class="second">Scope</th>
+								<th>Unit</th>
+								<th>Value<sup>1</sup></th>
+								<th>Criteria</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Scope 1, 2, and 3 greenhouse gas (GHG) emissions<sup>2, 3, 4, 5, 6</sup></td>
+								<td class="second">Global</td>
+								<td>Percentage reduction of tCO2e per stat case sold over baseline year (2011)<sup>7</sup></td>
+								<td>-32%</td>
+								<td>The World Resources Institute (“WRI”) / World Business Council for Sustainable Development’s (“WBCSD”) Greenhouse Gas (“GHG”) Protocol Corporate Accounting and Reporting Standard, the GHG Protocol Scope 2 Guidance and the GHG Protocol Corporate Value Chain (Scope 3) Standard </td>
+							</tr>
+							<tr class="even">
+								<td>Energy consumption, Scope 1 and 2<sup>2, 3, 4, 5</sup></td>
+								<td class="second">Global</td>
+								<td>Percentage reduction of MWh per stat case sold over baseline year (2011)<sup>7</sup></td>
+								<td>-17%</td>
+								<td>WRI/WBCSD’s GHG Protocol Corporate Accounting and Reporting Standard, the GHG Protocol Scope 2 Guidance</td>
+							</tr>
+							<tr>
+								<td>Water consumption<sup>2, 4</sup></td>
+								<td class="second">Global</td>
+								<td>Percentage reduction of gallons of water consumed per stat case sold over baseline year (2011)<sup>7</sup></td>
+								<td>-22%</td>
+								<td>Management’s criteria as follows: Water consumption includes water at all global manufacturing sites, offices and research development centers used in 1) products sold to customers 2) the manufacturing process 3) irrigation and 4) water consumed by employees during office hours for personal needs (i.e. restrooms, break rooms). Water sources include city/municipal, well, lake, river and storm water.</td>
+							</tr>
+							<tr class="even">
+								<td>Sustainability improvements to product portfolio since January 2012<sup>8</sup></td>
+								<td class="second">Global</td>
+								<td>Percentage of product portfolio</td>
+								<td>49%</td>
+								<td>Management’s criteria as follows: There are four types of sustainability improvement criteria that can be met either by fully meeting one or by partially meeting two or more: 1) a 5 percent or more reduction in product or packaging materials on a per-consumer-use basis; 2) an environmentally beneficial change to 10 percent or more of packaging or active ingredients on a per-consumer-use basis; 3) a 10 percent reduction in required usage of water or energy by consumer; or 4) an environmentally beneficial sourcing change to 20 percent or more of active ingredients or packaging on a per-consumer-use basis.</td>
+							</tr>
+							<tr>
+								<td rowspan="7">
+									Workforce <br />demographics/diversity metrics<sup>9</sup></td>
+								<td rowspan="7" class="second">
+									See right for metric scope</td>
+								<td>Percentage minority nonproduction employees in U.S.</td>
+								<td>32%</td>
+								<td rowspan="9">
+									OSHA Regulation 1920.2(d) defines “Employee” as an individual who is employed in a business of his employer which affects commerce. The Equal Employment Opportunity Commission defines “Minority” as any race that is not white (Asian; Black; Latino; Native American; Native Hawaiian; or Two or More).<br><br>
+
+									Management’s criteria as follows: “Manager” is defined as an “employee” at Grade 27 or above for U.S. employees and Grade 26 or above for international employees with regards to Clorox’s Human Resources (HR) compensation structure. “Production Employee” is defined as an employee at Grade 19 or below with regards to Clorox’s HR compensation structure (international and U.S.). “Non-Production Employee” is defined as an employee at Grade 20 or above with regards to Clorox’s HR compensation structure (international and U.S.). In certain circumstances, nonproduction employees may be classified below Grade 20 based on type of work performed.<br><br>
+
+									U.S. Census Bureau benchmark metrics are based on the U.S. Census Bureau’s Equal Employment Opportunity (EEO) Tabulation 2006-2010, American Community Survey 5-year dataset. The benchmarks are modeled using Clorox’s workforce as of June 30, 2018. The calculations utilize weighted averages by U.S. Census job code and apply approximate workforce location assumptions based on Clorox’s historical workforce locations and headcount trends. </td>
+							</tr>
+							<tr>
+								<td>Percentage minority nonproduction managers in U.S.</td>
+								<td>28%</td>
+							</tr>
+							<tr>
+								<td>Percentage female nonproduction employees globally</td>
+								<td>51%</td>
+							</tr>
+							<tr>
+								<td>Percentage female nonproduction managers globally</td>
+								<td>43%</td>
+							</tr>
+							<tr>
+								<td>Percentage female Board of Directors</td>
+								<td>33%</td>
+							</tr>
+							<tr>
+								<td>Percentage minority Board of Directors</td>
+								<td>33%</td>
+							</tr>
+							<tr>
+								<td>Percentage female Executive Committee members</td>
+								<td>33%</td>
+							</tr>
+							<tr>
+								<td />
+								<td />
+								<td>U.S. Census Bureau benchmark percentage for minority non-production managers in the U.S.</td>
+								<td>30%</td>
+							</tr>
+							<tr>
+								<td />
+								<td />
+								<td>U.S. Census Bureau benchmark percentage for minority non-production employees in the U.S.</td>
+								<td>33%</td>
+							</tr>
+							<tr class="even">
+								<td>U.S. product donations<sup>9,10</sup></td>
+								<td class="second">U.S. only</td>
+								<td>Fair market value of products donated in U.S. dollars</td>
+								<td>$14.4<br>million</td>
+								<td>Management’s criteria as follows: U.S. product donations refer to those donations used to aid in disaster relief or to support schools, food banks, and other non-profit organizations. Fair Market Value is derived from current year average truckload price of the product donated. Truckload prices are based on volume ordered and shipped.</td>
+							</tr>
+							<tr>
+								<td>Total recordable incident rate<sup>11</sup></td>
+								<td class="second">Global</td>
+								<td>Recordable incident rate (RIR)</td>
+								<td>0.82</td>
+								<td>Occupational Health and Safety Administration (OSHA) Regulation (Standards – 29 CFR) Part 1904 “Recording and Reporting Occupational Injuries and Illness”</td>
+							</tr>
+							<tr class="even">
+								<td>Employee engagement score<sup>12</sup></td>
+								<td class="second">Global</td>
+								<td>Percentage of employee engagement</td>
+								<td>88%</td>
+								<td>Management’s criteria as follows: Engagement is defined as the intensity of employees’ connection to Clorox, marked by committed effort to achieve work goals (‘being engaged’) in environments that support productivity (‘being enabled’) and maintain personal well-being (‘feeling energized’).</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<p class="footnote">Note 1: Non-financial information is subject to measurement uncertainties resulting from limitations inherent in the nature and the methods used for determining such data. The selection of different but acceptable measurement techniques can result in materially different measurements. The precision of different measurement techniques may also vary.</p>
+
+					<p class="footnote">1 All percentages are rounded to the nearest whole number in the Annual Report.</p>
+					<p class="footnote">2 For all locations where Clorox maintains operational control and for the calendar year ended Dec. 31, 2017.</p>
+					<p class="footnote">3 Scope 1 emissions include direct energy used by Clorox in its operations, categorized by stationary combustion, mobile combustion, refrigerant use, direct VOC loss and direct wood pyrolysis. The last two sources relate mainly to Clorox’s Kingsford business unit, and wood pyrolysis is considered to be a mostly carbon neutral process; therefore CO2 emissions from wood pyrolysis are not included in total tCO2e, but CO2 equivalent emissions from CH4 and N2O are included. Natural gas emissions, the largest Scope 1 emission source, are calculated using factors from EPA Mandatory GHG Reporting for Stationary Fuel Sources (June 2017) and Global Warming Potential (GWP) rates from the Intergovernmental Panel on Climate Change’s (IPCC) Fourth Assessment Report.</p>
+					<p class="footnote">4 Clorox’s natural gas, electricity and municipal water consumption data for U.S. sites are tracked by Clorox’s third-party utility management company. Other sources of energy and water consumption in the U.S. are tracked manually on a site by site basis and reported to Clorox’s corporate team on an annual basis. For international sites, all energy and water consumption data is tracked manually and reported annually to Clorox’s corporate team.</p>
+					<p class="footnote">5 Scope 2 includes indirect emissions resulting from Clorox’s purchased electricity use and is calculated using the Environmental Protection Agency’s (EPA) 2016 eGRID emission factors for U.S. locations and the Energy Information Administration’s (EIA) Foreign Electricity Emission Factors published in 2007 for international locations. Clorox applies GWPs from the IPCC’s Fourth Assessment Report. For the Scope 2 market-based-method, Clorox contacted its largest utility suppliers, however was unable to obtain supplier specific emission factors. Clorox does not purchase any renewable energy certificates or other contractual instruments and residual mix factors are not currently available in the locations in which Clorox operates. Due to the lack of market-based data available, Clorox’s market-based emissions were calculated following the same process as the location-based-method emissions.</p>
+					<p class="footnote">6 Scope 3 includes finished goods transportation in the U.S. only and global employee business travel. Employee business travel includes emissions from commercial air flights and rental car use by Clorox’s employees. Commercial air flights are limited to business travel booked in the United States, United Kingdom, Hong Kong, Chile, Mexico, Peru and Canada. In 2017, the company changed its calculation methodology for Scope 3 emissions as the U.S. EPA guidance stopped supporting the methodology the company previously adopted. In the current year, Scope 3 emissions for business travel are calculated using ‘per vehicle-mile traveled’ and ‘per passenger-mile traveled’ emissions factors from the EPA’s Center for Corporate Climate Leadership guidance, published in 2018. Emissions from finished goods transportation are calculated using ‘per ton-mile’ emission factors, from the same guidance. In prior years, Scope 3 emissions were calculated based on fuel usage, using the EPA’s ‘btu/ton-mile’ and ‘GHG emissions per unit of fuel’ emission factors. As these factors are no longer being provided by the EPA, Clorox calculated Scope 3 emissions using the revised approach in the current year, and also updated its 2011 baseline in order to accurately compare GHG emissions overtime.</p>
+					<p class="footnote">7 A stat case is the number of cases sold or produced multiplied by a stat factor which normalizes case value between brands and provides a common denominator of the revenue generated by cases across various brands.</p>
+					<p class="footnote">8 Once a product meets the sustainability improvement criteria, it is reported to the Clorox Eco Team by each business unit and the sustainability improvement percentage is calculated for that product using its fiscal year net customer sales as a percentage of Clorox’s total fiscal year net customer sales. The total sustainability improvements percentage represents the summation of all sustainability improvement percentages for products that met the criteria between Jan. 1, 2012 and Dec. 31, 2017.</p>
+					<p class="footnote">9 For the fiscal year ended June 30, 2018.</p>
+					<p class="footnote">10 U.S. product donations include donations made by any U.S. business unit.</p>
+					<p class="footnote">11 Recordable incident rate was determined as of July 9, 2018, for the fiscal year ended June 30, 2018. The recordable incident rate includes all reportable incidents that occurred at Clorox facilities globally. It does not include remote Clorox facilities that have fewer than 30 employees.</p>
+					<p class="footnote">12 Clorox adopts Willis Towers Watson’s definition of employee engagement in terms of ‘sustainable’ engagement. Employee engagement is measured by a survey administered March 12, 2018 through March 30, 2018. 6,350 Clorox employees responded to the survey.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<img src="../_images/materiality/wave.png" class="financialsWave">
+</div>
+
+
+<script src="../../unpkg.com/imagesloaded%404.1.4/imagesloaded.pkgd.min.js"></script>
+<script src="../_js/jquery.fancybox.min.js"></script>
+<script src="../_js/jquery.mousewheel.js"></script>
+<script src="../_js/greensock/TimelineMax.min.js"></script>
+<script src="../_js/greensock/TweenMax.min.js"></script>
+<script src="../_js/ScrollMagic.js"></script>
+<script src="../_js/plugins/jquery.ScrollMagic.js"></script>
+<script src="../_js/plugins/debug.addIndicators.js"></script>
+<script src="../_js/greensock/plugins/DrawSVGPlugin.min.js"></script>
+<script src="../_js/plugins/animation.gsap.js"></script>
+<script src="../_js/jquery.cycle2.min.js"></script>
+<script src="../_js/main031f.js?v.2018.2"></script><script>financials();</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"90a95d8474","applicationID":"2526212","transactionName":"MgRaYxZVDBIDW0BbWQtObUUNGwQIDFlaUV8EDUsYDVoGBBoWRFpG","queueTime":0,"applicationTime":4,"atts":"HkNZFV5PHxw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from annualreport.thecloroxcompany.com/financials/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Feb 2019 19:22:52 GMT -->
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from annualreport.thecloroxcompany.com/materiality.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Feb 2019 19:22:06 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="x-ua-compatible" content="IE=Edge"/>
+<meta charset="UTF-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1118.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:image" content="_images/global/shareImage.png?v.2018.1" />
+
+<title>Clorox 2018 Integrated Annual Report</title>
+<link rel="stylesheet" href="_css/maind80a.css?v.2018.4">
+<link rel="stylesheet" href="_js/jquery.fancybox.min.css">
+<script src="../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	    <script src="../assets.adobedtm.com/cfd7100a02cbfa40b2c485d333da22f89ccabd9c/satelliteLib-e1a96af74edf26406b64b1c5cb0abedb7b5a6c6c.js"></script>
+	</head>
+<body>
+<header>
+	<div class="header__hamburger">
+		<span>MENU</span>
+		<div class="header__hamburger__bars">
+			<div></div>
+		</div>
+	</div>
+
+	<a class="logoWrap" href="index-2.html">
+		<img class="header__logo" src="_images/global/logo.svg">
+	</a>
+    <div class="container container--header">
+        <div class="row">
+			<div class="header__links">
+				<span class="ir">2018 Integrated Annual Report</span>
+				<ul>
+					<li><a class="header__links__resources" href="#">Resources</a></li>
+					<li><a class="header__links__download" href="#">Download</a></li>
+					<li><a class="header__links__search" href="#"><i class="fas fa-search"></i></a></li>
+					<li class="socialLink facebook" id="facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+					<li class="socialLink twitter" id="twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+					<li class="socialLink linkedIn" id="linkedIn"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+					<li class="socialLink"><a href="mailto:corporate.communications@clorox.com"><i class="fas fa-envelope"></i></a></li>
+				</ul>
+			</div>
+
+			<div class="headerSearch">
+				<div class="headerSearch__relativeWrapper">
+					<form action="https://annualreport.thecloroxcompany.com/search.php">
+						<input class="headerSearch__input" type="text" class="search" name="q" id="tipue_search_input" autocomplete="off" placeholder="Search" required="">
+						<span class="headerSearch__del">X</span>
+					</form>
+				</div>
+			</div>
+
+			<div class="headerResources">
+				<div class="headerResources__relativeWrapper">
+					<ul>
+						<li><a href="about.html">About This Report</a></li>
+						<li><a href="materiality.html">Materiality Overview</a></li>
+						<li><a href="gri.html">GRI Content Index</a></li>
+						<li><a href="info.html">Stockholder Information</a></li>
+						<li><a target="_blank" href="https://www.thecloroxcompany.com/">The Clorox Company</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="downloads">
+				<div class="headerResources__relativeWrapper">
+					<ul>
+						<li><a href="Clorox_2018_Integrated_Report9530.pdf?v10-11-2018" target="_blank">Full PDF</a></li>
+						<li><a href="Clorox_2018_Executive_Summary_English.pdf" target="_blank">Executive Summary English</a></li>
+						<li><a href="Clorox_2018_Executive_Summary_Spanish.pdf" target="_blank">Executive Summary Spanish</a></li>
+					</ul>
+				</div>
+			</div>
+        </div>
+	</div>
+
+	<nav class="mainNav">
+		<div class="mainNav__box mainNav__box--1">
+			<a class="mainNav__mainLink" href="ceo-letter/index.html">CEO Letter</a>
+
+			<img src="_images/global/nav1.png" class="mainNav__product mainNav__product--1">
+		</div>
+
+		<div class="mainNav__box mainNav__box--2">
+			<div class="mainNav__linkWrap">
+				<a class="mainNav__mainLink" href="strategy/index.html">2020 Strategy</a>
+
+				<ul class="secondaryNav">
+					<li><a href="strategy/people.html">Engage our People</a></li>
+					<li><a href="strategy/value.html">Drive Superior Consumer Value</a></li>
+					<li><a href="strategy/portfolio.html">Accelerate Portfolio Momentum</a></li>
+					<li><a href="strategy/growth.html">Fund Growth</a></li>
+				</ul>
+			</div>
+
+			<img src="_images/global/nav2.png" class="mainNav__product mainNav__product--2">
+		</div>
+
+		<div class="mainNav__box mainNav__box--3">
+			<a class="mainNav__mainLink" href="innovation/index.html">Innovation</a>
+
+			<img src="_images/global/nav3.png" class="mainNav__product mainNav__product--3">
+		</div>
+
+		<div class="mainNav__box mainNav__box--4">
+			<div class="mainNav__linkWrap">
+				<a class="mainNav__mainLink" href="scorecard/index.html">Scorecard</a>
+
+				<ul class="secondaryNav">
+					<li><a href="scorecard/footprint.html">Global Footprint</a></li>
+					<li><a href="scorecard/performance.html">Performance</a></li>
+					<li><a href="scorecard/product.html">Product</a></li>
+					<li><a href="scorecard/people.html">People</a></li>
+					<li><a href="scorecard/community.html">Community</a></li>
+					<li><a href="scorecard/planet.html">Planet</a></li>
+				</ul>
+			</div>
+
+			<img src="_images/global/nav4.png" class="mainNav__product mainNav__product--4">
+		</div>
+
+		<div class="mainNav__box mainNav__box--5">
+			<div class="mainNav__linkWrap">
+				<a class="mainNav__mainLink" href="recognitions/index.html">Recognitions</a>
+
+				<ul class="secondaryNav">
+					<li><a href="recognitions/index.html">Company Recognitions</a></li>
+					<li><a href="recognitions/brand.html">Brand Recognitions</a></li>
+				</ul>
+			</div>
+			<img src="_images/global/nav5.png" class="mainNav__product mainNav__product--5">
+		</div>
+
+		<div class="mainNav__box mainNav__box--6">
+			<a class="mainNav__mainLink" href="financials/index.html">Financials</a>
+
+			<img src="_images/global/nav6.png" class="mainNav__product mainNav__product--6">
+		</div>
+
+		<div class="mainNav__box mainNav__box--7">
+			<div class="mainNav__linkWrap">
+				<a class="mainNav__mainLink" href="governance/index.html">Governance</a>
+
+				<ul class="secondaryNav">
+					<li><a href="governance/board.html">Board of Directors</a></li>
+					<li><a href="governance/committee.html">Executive Committee</a></li>
+				</ul>
+			</div>
+
+			<img src="_images/global/nav7.png" class="mainNav__product mainNav__product--7">
+		</div>
+
+		<div class="mainNav__box mainNav__box--mobile">
+			<ul>
+				<li class="facebook" id="facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+				<li class="twitter" id="twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+				<li class="linkedIn" id="linkedIn"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+				<li><a href="mailto:corporate.communications@clorox.com"><i class="fas fa-envelope"></i></a></li>
+			</ul>
+		</div>
+	</nav>
+</header>
+<div class="interiorWrapper interiorWrapper--materiality">
+    <div class="container">
+        <div class="row">
+			<div class="materialityContent">
+				<h1 class="pageTitle pageTitle--visible pageTitle--materiality">Corporate <br>Responsibility Priorities</h1>
+
+                <h3 class="materialitySubHeading">Priorities and Matrix</h3> 
+                <p>We believe that building trust among our stakeholders is important to building successful brands. That’s why we conducted a materiality exercise1 to identify our corporate responsibility priorities.2 These focus areas and corresponding matrix, developed with guidance from a third party, capture the company’s highest corporate responsibility priorities and, therefore, those areas where we should be placing the greatest emphasis. They are based on a review of the company’s 2020 Strategy, as well as feedback from Clorox employees and external stakeholders.</p>
+				<p>The matrix below shows our top 17 corporate responsibility priorities presented in relative importance to each other.</p>
+				<h4 class="materialityChart__title">Highest corporate responsibility Priorities<sup>2</sup></h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="materialityContent materialityContent--chart">
+				<img src="_images/materiality/chart1.svg" alt="" class="materialityChart">
+			</div>
+        </div>
+
+		<div class="row">
+			<div class="materialityContent">
+				<p class="footnote"><sup>1</sup> Based on assessment conducted in 2016.</p>
+				<p class="footnote"><sup>2</sup> “Corporate responsibility priorities” is used to avoid confusion with the financial meaning of the term “materiality.”</p>
+			</div>
+		</div>
+    </div>
+</div>
+
+
+<script src="../unpkg.com/imagesloaded%404.1.4/imagesloaded.pkgd.min.js"></script>
+<script src="_js/jquery.fancybox.min.js"></script>
+<script src="_js/jquery.mousewheel.js"></script>
+<script src="_js/greensock/TimelineMax.min.js"></script>
+<script src="_js/greensock/TweenMax.min.js"></script>
+<script src="_js/ScrollMagic.js"></script>
+<script src="_js/plugins/jquery.ScrollMagic.js"></script>
+<script src="_js/plugins/debug.addIndicators.js"></script>
+<script src="_js/greensock/plugins/DrawSVGPlugin.min.js"></script>
+<script src="_js/plugins/animation.gsap.js"></script>
+<script src="_js/jquery.cycle2.min.js"></script>
+<script src="_js/main031f.js?v.2018.2"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"90a95d8474","applicationID":"2526212","transactionName":"MgRaYxZVDBIDW0BbWQtObUUNGw8AFl1GW1cJCExOSkQKEQ==","queueTime":0,"applicationTime":6,"atts":"HkNZFV5PHxw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from annualreport.thecloroxcompany.com/materiality.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Feb 2019 19:22:07 GMT -->
+</html>
